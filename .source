@@ -1,0 +1,5 @@
+FILENAME=$(basename -- "$0")
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+
+source .venv/bin/activate
+export PATH="$SCRIPT_DIR:$PATH"
